@@ -13,8 +13,6 @@ export default function MenuScreen({ navigation }) {
   const menuItems = [
     { id: 1, title: 'Perfil', icon: '👤' },
     { id: 2, title: 'Serviços', icon: '🔧' },
-    { id: 3, title: 'Agendamentos', icon: '📅' },
-    { id: 4, title: 'Histórico', icon: '📊' },
     { id: 5, title: 'Configurações', icon: '⚙️' },
     { id: 6, title: 'Ajuda', icon: '❓' },
   ];
@@ -30,23 +28,14 @@ export default function MenuScreen({ navigation }) {
         // Funções para outros botões (comentadas)
         switch (item.title) {
           case 'Serviços':
-            // navigation.navigate('Servicos');
-            Alert.alert('Serviços', 'Funcionalidade em desenvolvimento');
-            break;
-          case 'Agendamentos':
-            // navigation.navigate('Agendamentos');
-            Alert.alert('Agendamentos', 'Funcionalidade em desenvolvimento');
-            break;
-          case 'Histórico':
-            // navigation.navigate('Historico');
-            Alert.alert('Histórico', 'Funcionalidade em desenvolvimento');
+            navigation.navigate('Servicos'); 
             break;
           case 'Configurações':
             // navigation.navigate('Configuracoes');
             Alert.alert('Configurações', 'Funcionalidade em desenvolvimento');
             break;
           case 'Ajuda':
-            // navigation.navigate('Ajuda');
+            navigation.navigate('Contato');
             Alert.alert('Ajuda', 'Funcionalidade em desenvolvimento');
             break;
           default:
