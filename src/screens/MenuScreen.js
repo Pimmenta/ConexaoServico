@@ -31,8 +31,7 @@ export default function MenuScreen({ navigation }) {
             navigation.navigate('Servicos'); 
             break;
           case 'Configurações':
-            // navigation.navigate('Configuracoes');
-            Alert.alert('Configurações', 'Funcionalidade em desenvolvimento');
+            navigation.navigate('Configuracoes');
             break;
           case 'Ajuda':
             navigation.navigate('Contato');
